@@ -1,0 +1,50 @@
+Host iot-platform
+     HostName 54.251.238.230
+     User ubuntu
+Host iot-partner2
+     HostName 13.215.182.30
+     User ubuntu
+Host iot-partner
+     HostName 202.92.6.102
+     User root
+     Port 24700
+Host upbase-staging2
+     HostName 34.87.53.167
+     ServerAliveInterval 60
+     ServerAliveCountMax 2
+     LocalForward 3344 localhost:3344
+     LocalForward 3333 localhost:3333
+     LocalForward 5532 10.148.0.4:5433
+     User ubuntu
+Host upbase-tools
+     HostName 34.124.214.127
+     ServerAliveInterval 60
+     ServerAliveCountMax 2
+     User huy.duong
+
+Host upbase-workspace
+     HostName 18.136.192.138
+     ServerAliveInterval 60
+     ServerAliveCountMax 2
+     User ubuntu
+     LocalForward 8000 localhost:8000
+Host upbase-prod-core
+     HostName 3.1.63.154
+     User ubuntu
+     LocalForward 3333 localhost:3333
+     LocalForward 3344 localhost:3344
+
+Host upbase-prod-oms
+     HostName 13.250.247.49
+     User ubuntu
+
+Host upbase-wp
+     HostName 125.212.231.121
+     User root
+
+Host rsa-dev
+   HostName 1.52.48.28
+   User ubuntu
+   ServerAliveInterval 60
+   ServerAliveCountMax 2
+   LocalForward 7500 localhost:7500
